@@ -1,0 +1,246 @@
+body {
+	height: 100vh;
+    background-color: #18161a;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+/*Barre de navigation*/
+.nav-start {
+    background: #010101;
+    display: table;
+    margin: 80px auto;
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+
+.nav-start .nav-link {
+    list-style: none;
+    display: inline-block;
+    margin-left: 50px;
+}
+.nav-start .nav-link a {
+    color: #ffbea5;
+    text-decoration: none;
+    position: relative;
+    padding: 15px 10px;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.nav-start .nav-link a::after {
+    content: '';
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    height: 4px;
+    background-color: #FEFEFE;
+    transform-origin: bottom right;
+    transition: transform 0.5s ease;
+    transform: scaleX(0);
+}
+.nav-start a:hover::after {
+    transform-origin: bottom left;
+    transform: scaleX(1);
+}
+
+/*TITRE HOME*/
+#see_characters{
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 30px;
+    color: white;
+}
+
+.little_text{
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+
+/*CONNEXION*/
+.bloc-log-blur{
+    display: flex;
+    justify-content: center;
+}
+
+.text-blur{
+    display: flex;
+    width: 24%;
+    background: #00000045;
+    box-shadow: 0 4px 30px rgb(0 0 0 / 10%);
+    backdrop-filter: blur(3.4px);
+    padding: 1em;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.position-log{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 16em;
+}
+
+.login {
+    width: 25em;
+    height: 30em;
+    border: none;
+    background: url(https://64.media.tumblr.com/4a2ccf219cbe0c41641cd4cb56fdbaa7/6aab62e6c0265e97-82/s400x600/256dd7bb4ee2b1797d96fa5af1f4c459f8a99bad.gif) center center no-repeat;
+    background-size: cover;
+    margin: 30px auto;
+    box-shadow: 5px 10px 45px -27px rgba(0,0,0,0.1);
+}
+
+.login .form {
+    width: 100%;
+    height: 100%;
+    padding: 15px 25px;
+}
+
+.login .form input {
+    width: 100%;
+    height: 40px;
+    padding-top: -25em;
+    margin-top: 14px;
+    padding: 0 15px;
+    border: 0;
+}
+
+::-webkit-input-placeholder {
+    background: transparent;
+}
+
+.login .form input.submit {
+    background: transparent;
+    color: #444;
+    font-size: 15px;
+    margin-top: 40px;
+    font-weight: bold;
+}
+
+.login__input::placeholder{
+    color: rgb(27, 26, 26);
+    opacity: 0.4;
+}
+
+.submit{
+    background: #c0644297;;
+    color: white;
+    text-transform: uppercase; 
+    margin-top: 1em;
+    border: none;
+    padding: 5px 20px;
+    box-shadow: rgba(191, 112, 39, 0.35) 0 -25px 18px -14px inset,rgba(191, 77, 39, 0.35) 0 1px 2px,rgba(191, 77, 39, 0.35) 0 2px 4px,rgba(191, 77, 39, 0.35) 0 4px 8px,rgba(191, 77, 39, 0.35) 0 8px 16px,rgba(191, 77, 39, 0.35) 0 16px 32px;
+    cursor: pointer;
+    display: inline-block;
+    padding: 7px 20px;
+    transition: all 250ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.submit:hover{
+    box-shadow: rgba(224, 34, 24, 0.35) 0 -25px 18px -14px inset,rgba(224, 34, 24, 0.35) 0 1px 2px,rgba(224, 34, 24, 0.35) 0 2px 4px,rgba(224, 34, 24, 0.35) 0 4px 8px,rgba(224, 34, 24, 0.35) 0 8px 16px,rgba(224, 34, 24, 0.35) 0 16px 32px;
+    transform: scale(1.05) rotate(-1deg);
+}
+
+
+/*INSCRIPTION*/
+
+.bloc-regist-blur{
+    display: flex;
+    justify-content: center;
+}
+
+.text-blur{
+    display: flex;
+    width: 24%;
+    background: #00000045;
+    box-shadow: 0 4px 30px rgb(0 0 0 / 10%);
+    backdrop-filter: blur(3.4px);
+    padding: 1em;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.position-register{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3em;
+}
+
+.register {
+    width: 50em;
+    height: 27em;
+    border: none;
+    background: url(https://cutewallpaper.org/21/witcher-3-hearts-of-stone-wallpaper/Witcher-3-Wallpaper-Hearts-Of-Stone-Imgur.jpg) center center no-repeat;
+    background-size: cover;
+    box-shadow: 5px 10px 45px -27px rgb(0 0 0 / 10%);
+}
+
+#formulaire{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 59px 102px;
+}
+
+.register form input {
+    background: transparent;
+    border: none;
+    font-size: 18px;
+    padding: 0 20px 0 50px;
+    color: inherit;
+}
+
+.enter{
+    background: #cacfd3;;
+    color: white;
+    text-transform: uppercase; 
+    margin-top: 1em;
+    border: none;
+    padding: 5px 20px;
+    box-shadow: rgba(118, 128, 133, 0.35) 0 -25px 18px -14px inset,rgba(118, 128, 133, 0.35) 0 1px 2px,rgba(118, 128, 133, 0.35) 0 2px 4px,rgba(118, 128, 133, 0.35) 0 4px 8px,rgba(118, 128, 133, 0.35) 0 8px 16px,rgba(118, 128, 133, 0.35) 0 16px 32px;
+    cursor: pointer;
+    display: inline-block;
+    padding: 7px 20px;
+    transition: all 250ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.enter:hover{
+    box-shadow: rgba(61, 55, 55, 0.35) 0 -25px 18px -14px inset,rgba(61, 55, 55, 0.35) 0 1px 2px,rgba(61, 55, 55, 0.35) 0 2px 4px,rgba(61, 55, 55, 0.35) 0 4px 8px,rgba(61, 55, 55, 0.35) 0 8px 16px,rgba(61, 55, 55, 0.35) 0 16px 32px;
+    transform: scale(1.05) rotate(-1deg);
+}
+
+
+/*CREATION PERSONNAGE*/
+.form-create{
+    display: flex;
+    justify-content: center;
+}
+
+#formcreate{
+    background: rgb(68, 66, 66);
+    padding: 4em;
+}
