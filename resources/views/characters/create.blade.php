@@ -5,7 +5,7 @@
 
 <div class="form-create">
 
-    <form id="formcreate" method="POST" action="{{route('characters/store')}}">
+    <form id="formcreate" method="POST" action="{{route('characters.store')}}">
         @csrf
         <div>
             <label for="name">Nom</label>
@@ -35,7 +35,7 @@
 
         <div>
             <label for="agitlity">Agility</label>
-            <input type="number" name="agitlity" id="agitlity" placeholder="son agitlity">
+            <input type="number" name="agility" id="agility" placeholder="son agility">
         </div>
 
         <div>

@@ -24,7 +24,8 @@ class CharacterController extends Controller
             "agility" => $request->input("agility"),
             "power" => $request->input("power"),
             "intelect" => $request->input("intelect"),
-
+            "pv" => $request->input("pv"),
+            "magic" => $request->input("magic"),
         ]);
 
         return view('home', ["character" => $newCharacter]);

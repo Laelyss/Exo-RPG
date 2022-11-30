@@ -15,6 +15,7 @@ class Character extends Model
         'magic',
         'power',
         'agility',
-        'intelect'
+        'intelect',
+        'pv'
     ];
 }
